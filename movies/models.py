@@ -39,7 +39,9 @@ class MovieRoom(models.Model):
     theater = models.ForeignKey(
         "MovieTheater", on_delete=models.CASCADE, related_name="rooms"
     )
-    movie = models.ForeignKey("Movie", on_delete=models.CASCADE, related_name="rooms")
+    movie = models.ForeignKey(
+        "Movie", on_delete=models.CASCADE, related_name="rooms"
+    )
 
     def __str__(self):
         return self.name
