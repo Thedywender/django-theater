@@ -6,8 +6,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-movies/migrations/
-
 # C extensions
 *.so
 
