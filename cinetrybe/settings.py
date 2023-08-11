@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'movies/static/',
 ]
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
+STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 WHITE_NOISE_AUTOREFRESH = True
 
