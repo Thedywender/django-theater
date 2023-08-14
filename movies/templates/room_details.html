@@ -21,7 +21,7 @@
 </nav>
 <div class="container mx-auto px-4 py-8 grid grid-cols-12 gap-1 md:gap-2 lg:gap-4 xl:gap-6 2xl:gap-8">
     {% for seat in seats %}
-    {% if seat.is_ocuppied %}
+    {% if seat.is_occupied %}
         <div class="rounded-lg shadow-md bg-armchair w- bg-red-400">
     {% else %}
         <div class="rounded-lg shadow-md bg-armchair w-fit bg-green-400">

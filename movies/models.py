@@ -52,7 +52,7 @@ class MovieSeat(models.Model):
     room = models.ForeignKey(
         "MovieRoom", on_delete=models.CASCADE, related_name="seats"
     )
-    is_ocuppied = models.BooleanField(default=False)
+    is_occupied = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
