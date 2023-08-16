@@ -1,6 +1,11 @@
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
-from movies.models import MovieTheater, MovieRoom, Movie, Person, Genre, MovieSeat
+from movies.models import (MovieTheater,
+                           MovieRoom,
+                           Movie,
+                           Person,
+                           Genre,
+                           MovieSeat)
 from movies.serializer import (
     MovieTheaterSerializer,
     MovieSerializer,

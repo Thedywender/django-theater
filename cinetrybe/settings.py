@@ -132,7 +132,14 @@ STATICFILES_DIRS = [
     BASE_DIR / 'movies/static/',
 ]
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+    },
+}
 
 WHITE_NOISE_AUTOREFRESH = True
 
