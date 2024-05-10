@@ -28,9 +28,7 @@ urlpatterns = [
     path("", index, name="homepage"),
     path("<int:theater_id>/rooms", theater_details, name="theater_details"),
     path(
-        "<int:theater_id>/room/<int:room_id>/seats",
-        room_details,
-        name="room_details"
+        "<int:theater_id>/room/<int:room_id>/seats", room_details, name="room_details"
     ),
     path("api/", include(router.urls)),
     path("api/generate-token", views.obtain_auth_token, name="api_token_auth"),
